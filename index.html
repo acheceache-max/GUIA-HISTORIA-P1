@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Historia del Diseño — Lectura Offline</title>
+<style>
+:root{--bg:#f4f1ea;--paper:#fffdf8;--ink:#191919;--muted:#6f6b63;--line:#ddd7cc;--accent:#b53a2f;--dark:#202020}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink);line-height:1.72}.topbar{position:sticky;top:0;z-index:10;background:rgba(244,241,234,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}.nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;gap:14px;overflow-x:auto;white-space:nowrap;font-family:Arial,sans-serif;font-size:.78rem;letter-spacing:.03em}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--accent)}main{max-width:900px;margin:auto;padding:0 22px 90px}.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:90px 0 70px}.eyebrow,.num{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--accent);font-weight:700}h1{font-size:clamp(3.1rem,8vw,6.8rem);line-height:.9;margin:20px 0;letter-spacing:-.05em}.hero p{max-width:720px;font-size:1.35rem;color:#444}.quote{margin:34px 0 0;padding:22px 26px;border-left:5px solid var(--accent);background:var(--paper);font-size:1.15rem}section{padding:95px 0 70px;border-top:1px solid var(--line)}h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;margin:9px 0 14px;letter-spacing:-.035em}.intro{font-size:1.2rem;color:#3f3d38;margin-bottom:30px}p{font-size:1.05rem;margin:0 0 20px}.concept{margin:34px 0;padding:24px 26px;background:var(--dark);color:white}.concept small,.designer strong{display:block;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.15em;font-size:.7rem;opacity:.75;margin-bottom:8px}.concept strong{font-family:Arial,sans-serif;font-size:1.35rem;letter-spacing:.04em}.question{margin:34px 0;font-size:1.55rem;line-height:1.35;font-style:italic;text-align:center;padding:10px 20px}.designer{margin:34px 0 10px;padding:19px 22px;border:1px solid var(--line);background:var(--paper)}.designer strong{color:var(--accent);opacity:1}.timeline{margin-top:35px;display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px}.timeline div{background:var(--paper);border:1px solid var(--line);padding:16px;text-align:center;font-family:Arial,sans-serif;font-weight:700;font-size:.82rem}.timeline span{font-weight:400;color:var(--muted)}.end{background:var(--dark);color:#fff;padding:52px 34px;margin-top:45px}.end h2{margin-top:0}.end p{color:#ddd}.sources{margin-top:18px;font-family:Arial,sans-serif;font-size:.78rem;color:#777}@media(max-width:600px){main{padding:0 17px 60px}.hero{min-height:70vh;padding-top:75px}.hero p{font-size:1.12rem}section{padding:70px 0 45px}p{font-size:1rem}}
+
+  .visual{margin:34px 0 38px;background:var(--paper);border:1px solid var(--line);overflow:hidden}
+  .visual img{display:block;width:100%;max-height:560px;object-fit:cover;background:#e9e5dc}
+  .visual figcaption{padding:11px 15px 14px;font-family:Arial,sans-serif;font-size:.73rem;line-height:1.45;color:var(--muted)}
+  .visual figcaption a{color:inherit}
+  .tip{font-family:Arial,sans-serif;font-size:.78rem;color:var(--muted);border-left:2px solid var(--accent);padding-left:12px;margin:15px 0 25px}
+
+
+/* --- Visual reading enhancements --- */
+.visual{
+  margin: 34px 0 42px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.visual img{
+  display:block;
+  width:100%;
+  max-height:560px;
+  object-fit:cover;
+  background:#e9e5dc;
+}
+.visual figcaption{
+  padding:11px 15px 14px;
+  font-family:Arial,sans-serif;
+  font-size:.73rem;
+  line-height:1.45;
+  color:var(--muted);
+}
+.visual figcaption a{color:inherit}
+.online-note{
+  margin: 18px 0 0;
+  padding: 10px 13px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font: .75rem/1.5 Arial,sans-serif;
+}
+
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin:32px 0 42px;
+}
+.gallery .visual{margin:0}
+.gallery .visual img{height:320px;max-height:none;object-fit:cover}
+.offline{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:3px solid var(--accent);
+  padding:12px 14px;
+}
+.offline strong{
+  font-family:Arial,sans-serif;
+}
+@media(max-width:700px){
+  .gallery{grid-template-columns:1fr}
+  .gallery .visual img{height:auto;max-height:480px}
+}
+
+</style></head>
+<body><header class="topbar"><nav class="nav"><a href="#inicio">Inicio</a><a href="#prehistoria">Prehistoria</a><a href="#mesopotamia">Mesopotamia</a><a href="#egipto">Egipto</a><a href="#grecia">Grecia</a><a href="#roma">Roma</a><a href="#asia">India y Asia</a><a href="#paleocristiano">Paleocristiano</a><a href="#bizancio">Bizancio</a><a href="#edad-media">Edad Media</a><a href="#manuscritos">Manuscritos</a><a href="#impresion">Impresión</a></nav></header>
+<main>
+<section id="inicio" class="hero" style="border-top:0"><div class="eyebrow">Historia del Diseño · Lectura de estudio</div><h1>De la necesidad de representar al nacimiento de la comunicación visual</h1><p>Antes de existir el diseño gráfico, ya existía algo mucho más antiguo: la necesidad humana de convertir ideas, experiencias e información en formas que pudieran ser vistas, comprendidas y recordadas.</p><div class="quote">“¿Cómo podemos hacer visible una idea?”</div>
+
+<div class="tip offline">
+  <strong>Lectura sin dependencia de internet.</strong>
+  Las imágenes están incluidas dentro de esta carpeta. Una vez descargado el sitio, puede abrirse sin conexión.
+</div>
+
+<div class="tip">Diseñada para teléfono, tableta y computadora. Haz scroll para leer y usa el menú superior para saltar entre periodos.</div></section>
+<section id="prehistoria"><div class="num">01 · PREHISTORIA</div><h2>El momento en que la imagen comenzó a comunicar</h2><p class="intro">Antes del alfabeto existía la imagen. Antes de escribir una palabra, el ser humano ya había descubierto que una forma podía representar algo que no estaba presente.</p><div class="gallery"><figure class="visual">
+              <img src="img/prehistoria_1.jpg" alt="Pintura rupestre: animales representados sobre la superficie de la cueva." loading="lazy">
+              <figcaption><strong>Pintura rupestre: animales representados sobre la superficie de la cueva.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure><figure class="visual">
+              <img src="img/prehistoria_2.jpg" alt="Detalle de una representación rupestre de una mano." loading="lazy">
+              <figcaption><strong>Detalle de una representación rupestre de una mano.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>Las pinturas rupestres constituyen algunas de las primeras evidencias conocidas de comunicación visual. En ellas aparecen animales, figuras humanas, manos y otros signos. Aunque no conocemos con absoluta certeza el significado de cada representación, sí podemos observar una transformación decisiva: la experiencia puede convertirse en una forma visible.</p><p>Un animal ya no necesita estar presente para ser representado. Una experiencia puede dejar una huella. Una idea puede convertirse en imagen.</p><div class="concept"><small>Idea clave</small><strong>REPRESENTAR</strong></div><div class="designer"><strong>Para el diseñador</strong>Transformar la realidad en una forma visual capaz de comunicar.</div></section>
+<section id="mesopotamia"><div class="num">02 · MESOPOTAMIA</div><h2>Cuando la imagen se convirtió en registro</h2><p class="intro">Las sociedades crecieron y apareció un problema nuevo: la memoria humana ya no era suficiente.</p><div class="gallery"><figure class="visual">
+              <img src="img/mesopotamia_1.jpg" alt="Tableta con escritura cuneiforme." loading="lazy">
+              <figcaption><strong>Tableta con escritura cuneiforme.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure><figure class="visual">
+              <img src="img/mesopotamia_2.jpg" alt="Ejemplo visual de escritura cuneiforme sobre soporte antiguo." loading="lazy">
+              <figcaption><strong>Ejemplo visual de escritura cuneiforme sobre soporte antiguo.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div>
+    <div class="visual"><div style="padding:26px;font-family:Arial,sans-serif;background:var(--paper)"><strong style="display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px">Ejemplo visual · Mesopotamia</strong><div style="font-size:1.15rem;margin-bottom:8px">Tableta cuneiforme del British Museum</div><div style="font-size:.82rem;color:var(--muted);line-height:1.5">Abre el ejemplo para observar cómo los signos se organizan sobre la superficie y convierten información en registro.</div><a href="https://www.britishmuseum.org/collection/image/32376001" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;color:var(--accent);font-weight:700">Ver imagen en British Museum →</a></div></div><p>Había que registrar productos, intercambios, cantidades, propiedades y actividades administrativas. En Mesopotamia surgieron sistemas de escritura que permitieron transformar información en signos organizados.</p><p>Las tablillas de arcilla hicieron posible conservar información que antes dependía de la memoria. La escritura se convirtió en una especie de memoria visual de la sociedad.</p><div class="concept"><small>Idea clave</small><strong>REGISTRAR</strong></div><div class="designer"><strong>Para el diseñador</strong>Convertir información compleja en signos y sistemas comprensibles.</div></section>
+<section id="egipto"><div class="num">03 · EGIPTO</div><h2>Cuando imagen, escritura y espacio trabajaron juntos</h2><p class="intro">En Egipto, la escritura y la imagen comenzaron a construir sistemas visuales complejos.</p><div class="gallery"><figure class="visual">
+              <img src="img/egipto_1.jpg" alt="Detalle de escritura jeroglífica egipcia." loading="lazy">
+              <figcaption><strong>Detalle de escritura jeroglífica egipcia.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure><figure class="visual">
+              <img src="img/egipto_2.jpg" alt="Ejemplo de relación entre imagen, escritura y símbolo en Egipto." loading="lazy">
+              <figcaption><strong>Ejemplo de relación entre imagen, escritura y símbolo en Egipto.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>Los jeroglíficos podían representar sonidos, palabras e ideas, mientras las figuras y escenas participaban en la construcción del significado. El tamaño, la posición y la relación entre elementos contribuían a establecer importancia.</p><p>La imagen no solamente representa información: también la organiza. Una figura mayor puede adquirir mayor importancia; una posición puede orientar la lectura; la repetición puede reforzar una idea.</p><div class="concept"><small>Idea clave</small><strong>ORGANIZAR Y JERARQUIZAR</strong></div><div class="designer"><strong>Para el diseñador</strong>No toda información tiene la misma importancia. La composición puede conducir la mirada.</div></section>
+<section id="grecia"><div class="num">04 · GRECIA</div><h2>La importancia de las relaciones</h2><p class="intro">Una composición no funciona solamente porque cada elemento sea interesante. Funciona porque los elementos mantienen relaciones entre sí.</p><p>En el mundo griego adquirieron especial importancia la proporción, la estructura, el equilibrio y la relación entre las partes. Una figura, una arquitectura o una composición podían funcionar porque existía una relación coherente entre sus componentes.</p><div class="concept"><small>Idea clave</small><strong>RELACIONAR</strong></div><div class="designer"><strong>Para el diseñador</strong>Una parte adquiere significado dentro del conjunto. Diseñar implica construir relaciones.</div></section>
+<section id="roma"><div class="num">05 · ROMA</div><h2>Cuando la comunicación salió al espacio público</h2><p class="intro">Roma llevó la comunicación visual a un escenario cotidiano: la ciudad.</p><p>Inscripciones, avisos, mensajes públicos y formas de comunicación comercial y política ocuparon muros y distintos soportes. La comunicación visual comenzó a formar parte de la experiencia urbana.</p><p>El espacio público se convirtió también en espacio de información. Esto planteó un problema que sigue vigente: cómo hacer que un mensaje sea visible dentro de un entorno lleno de estímulos.</p><div class="concept"><small>Idea clave</small><strong>COMUNICAR PÚBLICAMENTE</strong></div><div class="designer"><strong>Para el diseñador</strong>La comunicación necesita visibilidad, función e identificación dentro de un contexto.</div></section>
+<section id="asia"><div class="num">06 · INDIA Y ASIA</div><h2>Otras formas de construir imágenes y sistemas</h2><p class="intro">La historia del diseño no sigue una sola línea. Diferentes culturas desarrollaron soluciones propias para problemas visuales similares.</p><p>En India encontramos tradiciones donde el símbolo, la narración y la relación entre múltiples elementos tienen un papel importante. En China, escritura, caligrafía, imagen y espacio formaron relaciones complejas y la impresión permitió multiplicar textos e imágenes.</p><p>En Corea también se desarrollaron soluciones relacionadas con la estructura y la organización. Japón desarrolló procedimientos de reproducción mediante bloques que permitieron construir imágenes por capas y registrar diferentes colores con precisión.</p><div class="concept"><small>Ideas clave</small><strong>SÍMBOLO · RITMO · ESPACIO · REPRODUCCIÓN · CAPAS</strong></div><div class="designer"><strong>Para el diseñador</strong>No existe una única solución visual. Existen múltiples culturas, necesidades y respuestas.</div></section>
+<section id="paleocristiano"><div class="num">07 · PALEOCRISTIANO</div><h2>Cuando la imagen se convirtió en símbolo</h2><p class="intro">La expansión del cristianismo introdujo una nueva necesidad: representar conceptos religiosos mediante imágenes reconocibles.</p><div class="gallery"><figure class="visual">
+              <img src="img/byzantino.png" alt="Interior de un espacio religioso con una fuerte organización visual de imágenes." loading="lazy">
+              <figcaption><strong>Interior de un espacio religioso con una fuerte organización visual de imágenes.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>En las primeras representaciones cristianas, la prioridad no siempre fue demostrar habilidad técnica. Muchas imágenes buscaban comunicar un significado que pudiera ser reconocido por la comunidad.</p><p>La representación comienza así a concentrarse en los elementos necesarios para comprender una idea. Una imagen puede ser sencilla y, al mismo tiempo, conceptualmente poderosa.</p><div class="concept"><small>Idea clave</small><strong>SÍMBOLO Y SÍNTESIS</strong></div><div class="designer"><strong>Para el diseñador</strong>Reducir elementos puede aumentar la claridad cuando cada forma ha sido seleccionada por su capacidad de significar.</div></section>
+<section id="bizancio"><div class="num">08 · BIZANCIO</div><h2>La imagen como tradición</h2><p class="intro">Una imagen también puede funcionar porque forma parte de un sistema que la comunidad reconoce.</p><div class="gallery"><figure class="visual">
+              <img src="img/byzantino.png" alt="Interior de Santa Sofía: imagen, arquitectura y espacio trabajan como un conjunto." loading="lazy">
+              <figcaption><strong>Interior de Santa Sofía: imagen, arquitectura y espacio trabajan como un conjunto.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>En el arte bizantino, las imágenes religiosas mantuvieron una fuerte relación con modelos y convenciones tradicionales. El icono pertenecía a un sistema de formas reconocibles.</p><p>Con el tiempo, los iconos adquirieron una función central dentro de la tradición cristiana oriental y las iglesias se llenaron de ciclos visuales capaces de dominar la experiencia del espacio.</p><div class="concept"><small>Idea clave</small><strong>RECONOCIMIENTO Y SISTEMA</strong></div><div class="designer"><strong>Para el diseñador</strong>Un sistema visual necesita reglas y convenciones que permitan reconocer sus elementos.</div></section>
+<section id="edad-media"><div class="num">09 · EDAD MEDIA</div><h2>Cuando la imagen aprendió a contar</h2><p class="intro">Durante la Edad Media, la imagen comenzó a participar de manera cada vez más clara en la construcción de relatos.</p><p>Los monasterios tuvieron un papel importante en la conservación y producción de conocimiento. Allí se copiaron libros y se desarrollaron manuscritos cuidadosamente organizados.</p><p>La imagen dejó de comunicar únicamente una idea aislada y comenzó a formar parte de secuencias. Una escena podía mostrar un acontecimiento y otra continuar la historia.</p><div class="concept"><small>Idea clave</small><strong>NARRAR</strong></div><div class="designer"><strong>Para el diseñador</strong>Una secuencia de imágenes puede construir una historia mediante orden y recorrido visual.</div></section>
+<section id="manuscritos"><div class="num">10 · MANUSCRITOS ILUMINADOS</div><h2>Cuando una página se convirtió en un sistema visual</h2><p class="intro">Imaginemos un libro medieval: cada página debe ser escrita, ilustrada y organizada manualmente. Nada puede copiarse con un comando.</p><div class="gallery"><figure class="visual">
+              <img src="img/manuscrito_1.png" alt="Página de manuscrito iluminado: texto, ornamentación e imagen." loading="lazy">
+              <figcaption><strong>Página de manuscrito iluminado: texto, ornamentación e imagen.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure><figure class="visual">
+              <img src="img/manuscrito_2.png" alt="Otra página de manuscrito iluminado, mostrando jerarquía y composición." loading="lazy">
+              <figcaption><strong>Otra página de manuscrito iluminado, mostrando jerarquía y composición.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>Los manuscritos iluminados integraban escritura, ilustración, ornamentación y composición dentro de un mismo objeto. Su producción podía involucrar diferentes especialistas y espacios como el scriptorium.</p><p>Esto obligaba a tomar decisiones: dónde comienza el texto, cuánto espacio ocupa, dónde colocar una imagen, qué tamaño debe tener una letra inicial y cómo distribuir los elementos.</p><div class="concept"><small>Idea clave</small><strong>PLANEAR LA PÁGINA</strong></div><div class="designer"><strong>Para el diseñador</strong>Composición, jerarquía, márgenes, columnas, relación texto-imagen y ritmo forman parte de la experiencia de lectura.</div></section>
+<section id="texto-imagen"><div class="num">11 · TEXTO + IMAGEN</div><h2>Dos lenguajes que pueden trabajar juntos</h2><p class="intro">El texto puede explicar. La imagen puede mostrar. Juntos pueden construir algo más complejo.</p><p>En los manuscritos medievales la imagen podía complementar, ampliar o facilitar la comprensión del texto. El lector podía recorrer una historia mediante palabras y representaciones visuales.</p><div class="concept"><small>Idea clave</small><strong>RELACIÓN TEXTO · IMAGEN</strong></div><div class="designer"><strong>Para el diseñador</strong>No se trata necesariamente de elegir entre texto o imagen, sino de diseñar la relación entre ambos.</div></section>
+<section id="narrativa"><div class="num">12 · NARRATIVA VISUAL</div><h2>Una imagen puede comunicar; una secuencia puede contar</h2><p class="intro">La narrativa visual depende del orden, la continuidad y el recorrido del espectador.</p><div class="gallery"><figure class="visual">
+              <img src="img/manuscrito_1.png" alt="La página como espacio narrativo: imagen y texto guían el recorrido." loading="lazy">
+              <figcaption><strong>La página como espacio narrativo: imagen y texto guían el recorrido.</strong> Material visual utilizado en los materiales de clase.</figcaption>
+            </figure></div><p>El Tapiz de Bayeux es un ejemplo destacado de cómo diferentes escenas e inscripciones presentan una historia de manera continua. El relato se construye mediante una sucesión de acontecimientos que el observador debe recorrer visualmente.</p><div class="concept"><small>Idea clave</small><strong>SECUENCIA Y RECORRIDO</strong></div><div class="designer"><strong>Para el diseñador</strong>Ordenar imágenes también es diseñar tiempo, atención y significado.</div></section>
+<section id="tradicion"><div class="num">13 · TRADICIÓN E INNOVACIÓN</div><h2>Nada aparece completamente de la nada</h2><p class="intro">Las nuevas soluciones suelen dialogar con las anteriores.</p><p>La historia del arte y del diseño no funciona como una sucesión simple en la que una época desaparece y otra comienza desde cero. Las nuevas formas toman, transforman, cuestionan o reorganizan conocimientos previos.</p><div class="concept"><small>Idea clave</small><strong>CONTINUIDAD + TRANSFORMACIÓN</strong></div><div class="designer"><strong>Para el diseñador</strong>La innovación no elimina necesariamente lo anterior; puede reinterpretarlo.</div></section>
+<section id="impresion"><div class="num">14 · HACIA LA IMPRESIÓN</div><h2>Cuando una imagen pudo empezar a multiplicarse</h2><p class="intro">La impresión cambiaría la circulación del conocimiento y abriría una nueva etapa.</p><p>La posibilidad de reproducir textos e imágenes transformó la circulación del conocimiento. Una misma información podía aparecer muchas veces, llegar a públicos más amplios y viajar entre lugares distintos.</p><p>Meggs organiza la evolución del diseño desde la escritura y los manuscritos iluminados hacia la llegada de la impresión a Europa, el diseño del libro y posteriormente la tipografía y los procesos industriales.</p><div class="concept"><small>Idea clave</small><strong>REPRODUCIR</strong></div><div class="designer"><strong>Para el diseñador</strong>El soporte y la tecnología modifican las posibilidades de comunicación visual.</div></section>
+<section id="sintesis"><div class="num">15 · SÍNTESIS</div><h2>Una historia de problemas y soluciones</h2><p class="intro">La historia puede leerse como una secuencia de preguntas que todavía forman parte del trabajo de cualquier diseñador.</p><div class="timeline"><div>PREHISTORIA<br><span>Representar</span></div><div>MESOPOTAMIA<br><span>Registrar</span></div><div>EGIPTO<br><span>Organizar</span></div><div>GRECIA<br><span>Relacionar</span></div><div>ROMA<br><span>Comunicar</span></div><div>INDIA / ASIA<br><span>Simbolizar</span></div><div>PALEOCRISTIANO<br><span>Sintetizar</span></div><div>BIZANCIO<br><span>Reconocer</span></div><div>EDAD MEDIA<br><span>Narrar</span></div><div>MANUSCRITOS<br><span>Planear</span></div><div>IMPRESIÓN<br><span>Reproducir</span></div></div><div class="end"><h2>La historia todavía habla del presente</h2><p>Estudiar historia del diseño significa comprender de dónde vienen muchas de las decisiones que tomamos hoy.</p><p>Representar, registrar, organizar, jerarquizar, simbolizar, narrar, relacionar texto e imagen y reproducir siguen siendo problemas actuales.</p><p>Las herramientas cambian. Los soportes cambian. Las tecnologías cambian. Pero la pregunta fundamental permanece:</p><p style="font-size:1.35rem"><strong>¿Cómo transformar una idea en una forma visual capaz de comunicarla?</strong></p></div><p class="sources">Lectura elaborada a partir de los materiales y bibliografía de la asignatura.</p></section>
+</main></body></html>
